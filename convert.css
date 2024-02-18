@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: burlywood;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#box{
+    background-color: brown;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    color: white;
+    border-radius: 10px;
+    padding: 1em;
+    text-align: center;
+}
+#user-input{
+    width: 60%;
+    padding: .6em;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+button{
+    display: block;
+    margin: 1rem auto;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+}
+#result{
+   margin: 1rem;
+   font-size: 2rem;
+}
