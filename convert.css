@@ -1,14 +1,20 @@
+:root {
+    --background-1: #0a0a0a;
+    --background-2: #1b1b1b;
+    --white-gray: #fafafa;
+    --white-hover: #ffffff;
+  }
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: burlywood;
+    background-color: var(--background-1);
     font-family: Arial, Helvetica, sans-serif;
 }
 #box{
-    background-color: brown;
+    background-color: var(--background-2);
     width: 500px;
     height: 500px;
     margin: 0 auto;
@@ -17,7 +23,7 @@ body{
     padding: 1em;
     text-align: center;
 }
-#user-input{
+input{
     width: 60%;
     padding: .6em;
     border-radius: 10px;
@@ -30,7 +36,10 @@ button{
     padding: .5rem 1.5rem;
     border-radius: 10px;
 }
-#result{
+#output{
    margin: 1rem;
    font-size: 2rem;
+}
+.orange{
+    color: orange;
 }

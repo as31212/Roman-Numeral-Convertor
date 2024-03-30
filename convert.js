@@ -1,17 +1,22 @@
-const userInput = document.getElementById('user-input');
-const result = document.getElementById('result');
-const convertButton = document.getElementById('convert-button');
+const userInput = document.getElementById('number');
+const output = document.getElementById('output');
+const convertButton = document.getElementById('convert-btn');
 
 const numToRoman = (num) => {
 if(!userInput.value){
-    alert('Please Input Value');
+    output.innerText = 'Please enter a valid number';
+    output.classList.add('orange');
     return;
 }
 
   let changingNum = Number(num);
-
-  if(changingNum >10000){
-    alert('Please Input Smaller Value');
+if(changingNum <= 0){
+  output.innerText = 'Please enter a number greater than or equal to 1';
+  return;
+}
+  if(changingNum >= 4000){
+    output.innerText ='Please enter a number less than or equal to 3999';
+    output.classList.add('orange');
     userInput.value = '';
     return;
   }
@@ -40,7 +45,8 @@ if(!userInput.value){
       changingNum %= romanNumerals[i].number;
     }
   }
-  result.innerText = numeral;
+  output.innerText = numeral;
+  output.classList.remove('orange');
   return;
 };
 
